@@ -20,8 +20,8 @@ func handleData(data string) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	current_time := time.Now()
-	res, err := statement.Exec(data, current_time)
+	currentTime := time.Now()
+	res, err := statement.Exec(data, currentTime)
 	fmt.Println(res)
 	if err != nil {
 		log.Fatal(err)
